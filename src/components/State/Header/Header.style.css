@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    background: #9c64a6;
+    width: 100%;
+    height: 10rem;
+}
+
+.head{
+    color: #4a0072;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.button_addlist{
+    margin: 3rem;
+    background: #ffc4ff;
+    color: #883997;
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+.button_addlist:hover{
+    cursor: pointer;
+    border: 1px solid #883997;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:768px){
+    .button_addlist{
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:425px){
+
+    .button_addlist{
+        margin: 1rem;
+    
+    }
+    .head{
+        margin-left: 0.9rem;
+        font-size: 1.5rem;
+    }
+
+}
