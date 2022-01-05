@@ -1,0 +1,99 @@
+.TodoList {
+    max-width: 100%;
+    margin: 5rem;
+    padding: 3rem;
+    display: flex;
+    overflow-wrap: unset;
+  }
+  
+  .todo {
+    border: 1px solid #4a0072;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background: #ba68c8;
+    width: 40rem;
+    height: 30rem;
+    overflow-y: auto;
+  }
+  .todo_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .TodoList > .todo {
+    margin: 1rem;
+  }
+  label {
+    cursor: pointer;
+  }
+  li {
+    margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 0;
+  }
+
+  .btn-add{
+    margin-top: 5rem; 
+    background: #ffc4ff;
+    color: #883997;
+    width: 8rem;
+    height: 4 rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width:768px){
+    .btn-add{
+      width: 5rem;
+      font-size: 0.8rem;
+    }
+
+    .todo{
+      width: 60rem;
+      height: 30rem;
+    }
+
+    .todo_head{
+      font-size: 0.8rem;
+    }
+    li{
+      font-size: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width:425px){
+    .TodoList{
+      margin:0%;
+    }
+    .btn-add{
+      width: 5rem;
+      font-size: 0.8rem;
+    }
+
+    .todo{
+      width: 100rem;
+      height: 30rem;
+    }
+
+    .todo_head{
+      font-size: 0.8rem;
+  
+    }
+    li{
+      font-size: 0.7rem;
+    }
+    .TodoList > .todo {
+      margin: 0.2rem;
+    }
+  }
+
+  
